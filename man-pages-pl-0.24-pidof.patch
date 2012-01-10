@@ -1,0 +1,22 @@
+--- pl_PL/man8/pidof.8-orig	2003-08-21 15:07:53.000000000 +0200
++++ pl_PL/man8/pidof.8	2006-01-06 17:18:23.000000000 +0100
+@@ -5,6 +5,7 @@
+ .SH SK£ADNIA
+ .B pidof
+ .RB [ \-s ]
++.RB [ \-c ]
+ .RB [ \-x ]
+ .RB [ \-o
+ .IR pomiñpid ]
+@@ -24,6 +25,11 @@
+ .SH OPCJE
+ .IP -s
+ Pojedynczy strza³ - mówi to programowi, by wy¶wietli³ tylko jeden \fIpid\fP.
++.IP -c
++Zwraca tylko identyfikatory procesów dzia³aj±cych w tym samym katalogu g³ównym.
++Ta opcja jest nieprzydatna dla u¿ytkowników innych ni¿ root, poniewa¿ nie bêd±
++oni mogli sprawdziæ aktualnego katalogu g³ównego procesów, których nie s±
++w³a¶cicielami.
+ .IP -x
+ Skrypty równie¿ - to powoduje, ¿e program zwraca równie¿ identyfikatory
+ procesów pow³ok, pracuj±cych z podanymi skryptami.
